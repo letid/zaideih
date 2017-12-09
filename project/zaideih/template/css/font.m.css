@@ -1,0 +1,18 @@
+@font-face {
+	font-family: 'Myanmar3';
+	src: url('../../../../fonts/Myanmar3.woff') format('woff'),
+	     url('../../../../fonts/Myanmar3.ttf')  format('truetype'),
+	     url('../../../../fonts/Myanmar3.svg#Myanmar3') format('svg');
+	unicode-range: U+1000-109F, U+AA60-AA7B;
+	font-weight: normal;
+	font-style: normal;
+	}
+.mm3, .Myanmar3 {font-family:'Myanmar3';}
+
+* { font-family:Arial,Myanmar3,'Masterpiece Uni Sans',sans-serif;}
+
+body { 
+	font-size: 12px;
+}
+#bar *,
+#header * {line-height:15px;}

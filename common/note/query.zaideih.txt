@@ -1,0 +1,11 @@
+#TRACK AND COUNT COMMENTS
+SELECT t.*, count(t.ID) as total_comments
+	FROM zd_tracks  AS t
+   	LEFT JOIN zd_comments c ON c.TRACK = t.ID
+	WHERE t.ID = '3'
+	GROUP BY t.ID
+
+SELECT a.title AS title, u.username AS username, count(c.id) as total_comments FROM articles a
+   LEFT JOIN comments c ON c.article_id = a.id
+   LEFT JOIN users u ON a.user_id = u.id
+GROUP BY a.id

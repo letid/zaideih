@@ -1,0 +1,4 @@
+@-moz-document url-prefix(){
+	#bar .zm ul li ul{top:29px;}
+	#bar form p input[type="button"]{right:106px;top:1px;}
+}

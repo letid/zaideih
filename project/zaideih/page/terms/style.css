@@ -1,0 +1,6 @@
+#content .wrapper{ width:92%; padding:30px 5% 30px 3%; }
+#content h1{ font-size: 19px; color: #666; }
+#content h3{ font-size: 14px; padding:7px 2%; color: #666; font-weight: normal; }
+#content p{ font-size: 12px; color: #333; padding:7px 5%;}
+#content ul{ padding: 7px 10%; list-style-type: circle; }
+#content ul li{ font-size: 12px; color: #333; padding:3px 2%;}

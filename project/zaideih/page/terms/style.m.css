@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+body { background-color: #fbfbfb; } /*#f6f6f6; #f0f1ef; ECEDE7*/
+
+#bar { }
+#bar .resize { }
+#bar .resize .wrapper { }
+
+#header { }
+#header .resize {   }
+#header .resize .wrapper { }
+
+#board {  }
+#board .resize { }
+#board .resize .wrapper {  }
+
+#content { }
+#content .resize {  }
+#content .resize .wrapper { }
+
+#footer {  }
+#footer .resize { }
+#footer .resize .wrapper { }
+
+#header .resize,
+#board .resize,
+#content .resize {  }
+
+
+#content .resize .wrapper{ width:92%; padding:30px 5% 30px 3%; text-align: justify;}
+#content .resize .wrapper h1{ font-size: 19px; color: #666; }
+#content .resize .wrapper h3{ font-size: 14px; padding:2px 2%; color: #666; font-weight: normal; }
+#content .resize .wrapper p{ font-size: 12px; color: #333; padding:2px 3%;}

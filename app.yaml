@@ -1,0 +1,46 @@
+application: zotune
+version: final
+runtime: php
+api_version: 1
+threadsafe: yes
+handlers:
+- url: /favicon\.ico
+  static_files: common/img/favicon.png
+  upload: common/img/favicon\.png
+  
+- url: /fonts/(.*\.(ttf|eot|svg|css))
+  static_files: fonts/\1
+  upload: fonts/(.*)
+  
+- url: /common/(.*\.(css|js|gif|png|jpg|html))
+  static_files: common/\1
+  upload: common/(.*)
+  application_readable: true 
+
+- url: /pro/(.*)
+  static_files: project/myordbok/\1
+  upload: project/myordbok/(.*)
+  application_readable: true
+  
+- url: /project/(.*\.(css|js|gif|png|jpg|html|swf|ttf|eot|svg|xml|mp3))
+  static_files: project/\1
+  upload: project/zaideih/(.*)
+  application_readable: true
+  
+- url: /.*
+  script: index.php
+
+skip_files:
+- ^(.*/)?\.bat
+- ^(.*/)?\.cmd
+- ^(.*/)?\.htaccess
+- ^(.*/)?\.config
+- ^(.*/)?\.ini
+- ^(.*/)?\.zip
+- ^(.*/)?\.mp3
+- ^(.*/)?\.psd
+- ^(project/developer/.*)
+- ^(project/myordbok/.*)
+- ^(project/laisiangtho/.*)
+- ^(class/google/.*)
+- ^(class/getid3.apache/.*)

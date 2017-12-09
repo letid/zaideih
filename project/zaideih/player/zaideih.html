@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ZOTUNE</title>
+    <link rel="canonical" href="http://localhost:8080/zotune-zaideih/music"/>
+    <link rel="urlmain" href="http://localhost:8080/"/>
+    <link rel="urlproject" href="http://localhost:8080/project/zotune-zaideih/"/>
+    <link rel="urlfull" href="http://localhost:8080/zotune-zaideih/music"/>
+    <style type="text/css">
+    dl { }
+	dl dt{ background-color: #999; margin:2px; padding:2px; }
+	dl dd{ background-color: #900; margin:2px; padding:2px; }
+    </style>
+    <script type="text/javascript" src="../../../common/js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="../../../common/js/jzotune.js"></script>
+<script>
+(function($) {
+	$.fn.zaideih = function(e) {
+	var z = z||{}, zd=$(this);
+	z = {
+		n: {},
+		h: {},
+		msg:{},
+		int:function () {
+			this.action();
+		},
+		action:function (){
+			zd.on(e.c,'.jp-click', function(){
+				z.t1 = 'OK Now...';
+				$(this).parents('div').prepend($('<span>',{class:"ok",html:z.t1}));
+			});
+			zd.on(e.c,'span.ok', function(){
+				//console.log(z.t1);
+				$(this).parents('div').prepend($('<div>',{class:"prefect",html:z.t1}));
+				z.t1 = 'Prefect...';
+			});
+			zd.on(e.c,'div.prefect', function(){
+				$(this).html(z.t1);
+				z.com.content();
+			});
+		},
+		com:{
+			content:function (){
+				console.log('com.content '+z.t1);
+			}
+		},
+		b: null
+	}; z.int();
+}})(jQuery);
+$(document).ready(function() {
+    $(document).zaideih({c:"click",m:"#zotune_container",p:"#zotune_player"});
+});
+</script>
+
+
+</head>
+<body>
+<input value="love, me and, if you, ," id="store" />
+<div id="zotune_container">
+	<div class="jp-click">click</div>
+    <div class="jp-playlist">playlist</div>
+    <div class="jp-lyric">lyric</div>
+    <div class="jp-comment">comment</div>
+</div>
+</body>
+</html>

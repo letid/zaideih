@@ -1,0 +1,28 @@
+<?php
+define("page title",'Privacy');
+define("page keywords",'privacy, policy');
+define("page description",'Privacy');
+define('zp0','Privacy Policy');
+define('zp1','Your privacy is very important to us. Accordingly, we have developed this policy in order for you to understand how we collect, use, communicate and disclose and make use of personal information. The following outlines our privacy policy.');
+define('zp2','Before or at the time of collecting personal information, we will identify the purposes for which information is being collected.');
+define('zp3','We will collect and use of personal information solely with the objective of fulfilling those purposes specified by us and for other compatible purposes, unless we obtain the consent of the individual concerned or as required by law.');
+define('zp4','We will only retain personal information as long as necessary for the fulfillment of those purposes.');
+define('zp5','We will collect personal information by lawful and fair means and, where appropriate, with the knowledge or consent of the individual concerned.');
+define('zp6','Personal data should be relevant to the purposes for which it is to be used, and, to the extent necessary for those purposes, should be accurate, complete, and up-to-date.');
+define('zp7','We will protect personal information by reasonable security safeguards against loss or theft, as well as unauthorized access, disclosure, copying, use or modification.');
+define('zp8','We will not stream any new music on the market, unless we have a permission from the copyright holder to do so.');
+define('zp9','We will make readily available to customers information about our policies and practices relating to the management of personal information.');
+define('zp10','Below you can get more detailed information about our privacy policy.');
+define('zp11','Recorded information about Zaideih Music Station’s visitors');
+define('zp12','Zaideih Music Station gather information about all visitors to {www} web site. This includes the time and date of the visit, the operating system and browser used, the domain from where you visited, where you were redirected from and the pages you browsed. This information is used only for the purpose of generating server usage statistics and development of Zaideih Music Station. We do not collect personally identifiable information such as your name, postcode or e-mail address, nor do we relate personal information to usage statistics. However we do record emails which are sent from Zaideih Music Station.');
+define('zp13','Member information in Zaideih Music Station database');
+define('zp14','Any member who hold an account at Zaideih Music Station may request such information that might be considered personal. Whenever information is required for a service we will explain why it is needed and how it will be used. Information will be stored for as long as you use the service, until the purpose of the information is met, or until you request to terminate your registration.');
+define('zp15','Disclosure');
+define('zp16','Zaideih Music Station will not disclose any personal information to outside organisations or companies. Member information will not be displayed in public unless you have shared it yourself. Furthermore, if/as you are holding an account the information will only be available to relevant staff members within {www} and you will be asked directly if we upgrade/increase our services.');
+define('zp17','Cookies and Temp Playlists');
+define('zp18','Zaideih Music Station define your ip address by cookies (visited or not) from your machine. The purpose of the information is to count how many visitors we have, how long time you have been visiting the site and how long time it was since your last visit. Our cookies does not collect any of your personal information or any information about your machine. {www} deletes sessions when the browser window is closed. If remember me checkbox is checked, then session cookies are remained for the track of logged or not logged sessions to enable members who are on their own machine.');
+define('zp19','Security');
+define('zp20','Zaideih Music Station will continue to do its upmost to protect user privacy. Any attempted breach of security will be dealt with immediately. Hosts or users that attempt to use the music server for unwanted or harmful purposes will be permanently blocked. Unauthorised access to the internal area of Zaideih Music Station, or to the server itself is strictly forbidden. Please contact us if you find any abuse.');
+define('zp21','Feedback');
+define('zp22','Please feel free to contact us for any feedback, suggestions and comments.');
+define('zp23','We are committed to conducting our business in accordance with these principles in order to ensure that the confidentiality of personal information is protected and maintained.');

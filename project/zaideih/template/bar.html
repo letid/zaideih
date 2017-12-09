@@ -1,0 +1,35 @@
+    <div id="bar" class="portal">
+        <div class="resize">
+            <div class="wrapper">
+                <div class="column zd">
+                    <ul class="penu">
+                        <li><a href="{www}" title="{pro.name}" class="navigator-main">Zaideih</a>
+                            {menu.main}
+                         </li>
+                    </ul>                
+                </div>
+                <div class="column zn">
+                    <form name="search" method="get" action="{www}music">
+                      <p id="schkeyword">
+                        <input name="q" value="{q}" title="{Type a word or two to find your favorite music}" type="text" />
+                        <input type="button" title="{Search}" name="search" />
+                      </p>
+                      <p id="schoption" class="options">
+                        <input name="qn" value="track" id="track" type="radio" {qn.track.check} />
+                          <label for="track" title="...{Track}">Track</label>
+                        <input name="qn" value="artist" id="artist" type="radio" {qn.artist.check} />
+                          <label for="artist" title="...{Artist}">Artist</label>
+                        <input name="qn" value="album" id="album" type="radio" {qn.album.check} />
+                          <label for="album" title="...{Album}">Album</label>
+                        <input name="qn" value="avekpi" id="avekpi" type="radio" {qn.avekpi.check} />
+                          <label for="avekpi" title="...{All}">All</label>
+                      </p>
+                    </form>
+                </div>
+                <div class="column zm">
+                    {menu.user}   
+               </div>
+          </div>
+        </div>
+    </div>
+    <div id="jzmp" class="portal"></div> 

@@ -1,0 +1,29 @@
+
+@font-face {
+	font-family: 'Myanmar3';
+	src: url('../../../../fonts/Padauk.woff') format('woff'),
+	     url('../../../../fonts/Padauk.ttf')  format('truetype'),
+	     url('../../../../fonts/Padauk.svg#Padauk') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/*
+@font-face {
+	font-family: 'Myanmar3';
+	src: url('../../../../fonts/MasterpieceUniSans.woff') format('woff'),
+	     url('../../../../fonts/MasterpieceUniSans.ttf')  format('truetype'),
+	     url('../../../../fonts/MasterpieceUniSans.svg#Myanmar3') format('svg');
+	unicode-range: U+1000-109F, U+AA60-AA7B;
+	font-weight: normal;
+	font-style: normal;
+}
+*/
+.mm3, .Padauk {font-family:'Myanmar3';}
+
+* { font-family:Myanmar3,Arial;}
+
+body { 
+	font-size: 12px;
+}
+#bar *,
+#header * {line-height:15px;}

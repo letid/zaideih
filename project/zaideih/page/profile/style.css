@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+/*
+.zProfile {margin:0 1%; padding:1% 0; position:relative; border-radius:2px; font-size:110%;}
+.zProfile.info {width:56%;}
+.zProfile.page {width:40%;}
+*/
+#content .column.zn{ padding:0 5px;}
+
+
+#content .column h2, 
+#content .column h3{padding:8px 3%; margin:7px 0; border-radius:2px; position:relative; left:0; font-size:125%;  white-space:nowrap; text-overflow:ellipsis; overflow:hidden; }
+#content .column h2{ background-color: #C5C5C5; color: #7C7C7C; text-shadow: #DDD 1px 1px 1px; }
+#content .column h2 span { display:inline;position: absolute; padding: 2px 7px; top: -1px; right: -1px; font-size: 80%; background-color: #D6D6D6; color: #990000; border-radius: 0px 2px 0px 3px; box-shadow: -1px 1px 1px 0px #AEAEAE; }
+#content .column.zn h2{background-color:#d6d9cc; }
+#content .column h3{background-color:#DCDED3;}
+#content .column ul{margin:5px 0; min-height:150px; background-color:#E3E6DD; border-radius:2px; overflow:hidden;}
+#content .column ul h4{padding:7px 3%; background-color: #d6d9cc; text-shadow: 1px 1px 1px #EEEEEE; color: #8A8A8A; border-bottom: 1px solid #EFEFEF;}
+#content .column ul li{padding:3% 4%; font-size:100%;}
+#content .column ul li p{margin:1px 3%; color:#666;}
+
+/*info*/
+#content .column ul.info li p span{margin-right:7px; color:#300;}
+/*location*/
+#content .column ul.location li p span{margin-right:5px; color:#300;}
+/*contact*/
+#content .column ul.contact li p span{margin-right:5px; color:#300;}
+/*profile*/
+#content .column ul.profile li{padding:5% 4%;}
+
+/*update*/
+#content .column ul.update li{ padding:2% 4%;}
+#content .column ul.update li p{ display:inline-block; width:46%; padding:0; margin:7px 1% 1px 1%;}
+#content .column ul.update li p a{display:block; padding:12px 7px; border-radius: 2px;  background-color:#CDD0C1; text-shadow:#FFFFFF 1px 1px 1px; color:#797979;white-space:nowrap; text-overflow:ellipsis; overflow:hidden;}
+#content .column ul.update li p a span{ font-size:100%;}
+#content .column ul.update li p a:hover{background-color:#C1C6B3; color:#333333;}
+
+/*status*/
+#content .column ul.status li p{display:inline-block; width:46%; border-radius:2px; margin:1% 1%; position:relative; white-space:nowrap; text-overflow:ellipsis; overflow:hidden;}
+#content .column ul.status li p a{display:block; width:auto; padding:7px; font-size:100%; text-shadow:#FFFFFF 1px 1px 1px; color:#797979; z-index:1;}
+#content .column ul.status li p a span{ float: right; padding: 3px 7px; font-size: 90%; position: absolute; right: 2%; top: 4px; border-radius: 2px; z-index: 0; background-color: #AEB39B; }
+
+#content .column ul.status li p.private {background-color:#CDD0C1;}
+#content .column ul.status li p.public {background-color:#C1C6B3;}
+
+#content .column ul.status li p.private a span{ color:#900;}
+#content .column ul.status li p.public a span{ color: #F8F8F8; text-shadow: #666 1px 1px 1px; }
+#content .column ul.status li p a:hover span { background-color: #B8BCA7; color: #646464; }
+
+#content .column ul.system li{padding:5% 4%;}
+#content .column ul.system li p em{ font-style: normal; color: #900; font-size:80%;}

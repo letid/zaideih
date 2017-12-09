@@ -1,0 +1,20 @@
+#CHECK 
+SELECT * FROM dictionary.mob_mmdef AS s
+	WHERE (s.en, s.state) NOT IN
+	      ( SELECT t.source, t.state
+	        FROM zotunemyordbok.mob_myen AS t
+	      )
+	LIMIT 10
+
+DELETE FROM mob_mmdef
+ WHERE id NOT IN (SELECT * 
+                    FROM (SELECT MIN(n.id)
+                            FROM mob_mmdef n
+                        GROUP BY n.en,n.my,n.state) x)
+
+INSERT INTO zotunemyordbok.mob_myen(source,state,def,status,uid)   
+SELECT s.en,s.state,s.my,'1','14' FROM dictionary.mob_mmdef AS s
+	WHERE (s.en, s.state) NOT IN
+	      ( SELECT t.source, t.state
+	        FROM zotunemyordbok.mob_myen AS t
+	      )

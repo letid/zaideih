@@ -1,0 +1,57 @@
+<div class="column zn zAlb">
+    <dl class="mlt">
+        <dt class="tr">
+            <div class="td iov s">
+            	<p>
+                	<span class="Ptl io play zA" title="{Play}">{Play}</span>
+                    <img src="{url.template}images/none/nonephoto_hornbill_sml_.jpg" alt="{ALBUM}">
+                </p>
+            </div>
+            <div class="td int">		
+                <p class="h1 album"><a href="{www_album}">{ALBUM}</a></p>
+                <p class="h2 artist">
+                	{album_artists_www}
+                </p>
+                <p class="h3 info">
+                	<span class="year">{YEAR}</span>
+                    <a href="{www.music}?genre={GENRE}" class="genre">{GENRE}</a>
+                </p>
+            </div>
+        </dt>
+        <dd class="tr">
+            <ol class="trk">
+            {album.tracks}
+            </ol>
+        </dd>
+    </dl>
+</div>
+<div class="column zm zAlb">
+    <dl class="alt">
+        <dt>
+            <a href="#" class="ALT detail zA cur" title="info"><em>Info.</em></a>
+            <a href="#" class="ALT contribution zA"><em>Contribution</em></a>
+            <a href="album/tag/{UNIQUEID}" class="ALT tag zA" title="{ALBUM}"><em>{ALBUM}!</em></a>
+        </dt>
+        <dd id="detail">
+            <ol class="d1">
+                <li class="plays" title="p"><em>Play:</em><strong>{album_plays_total}</strong></li>
+                <li class="comments {comments_track_css}" title="c"><em>Comment:</em> <strong>{album_comments_total}</strong></li>
+                <li class="year" title="y"><em>Year:</em><strong>{YEAR}</strong></li>
+                <li class="genre" title="g"><a href="{www.music}?genre={GENRE}">{GENRE}</a></li>
+                <li class="artists">{album_artist}</li>
+                <li class="length" title="L"><em>Length:</em> <strong>{album_length}</strong></li>
+            </ol>
+        </dd>
+        <dd id="contribution">
+            <p class="b1 msg" data-icon="?">How would you like to distribute on <em>{ALBUM}</em> to get relevant information?</p>
+            <ol class="d3 da">
+                <li data-icon="ar">
+                	<a href="artist/get/{ID}/{artist_encode}" class="CON zA">...please do tell us what do you know about <strong>{album_artists}</strong> that might help other people finding easier? Of course, this is not a comment form!</a>
+                </li>
+                <li data-icon="al">
+                	<a href="album/get/{UNIQUEID}" class="CON zA">...I would like to contribute by posting about <strong>{ALBUM}</strong>, and it informative description such as Released, Genre, Label and Producer!</a>
+                </li>                
+            </ol>
+        </dd>
+    </dl>
+</div>

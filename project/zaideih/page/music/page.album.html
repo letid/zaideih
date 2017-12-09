@@ -1,0 +1,28 @@
+<div class="main zAlb">
+    <dl class="mlt">
+        <dt class="tr tes">
+            <div class="td iov s">
+            	<p>
+                	<span class="Ptl io play zA" title="{Play}">{Play}</span>
+                    <img src="{url.template}images/none/album.png" alt="{ALBUM}">
+                </p>
+            </div>
+            <div class="td int">		
+                <p class="h1 album"><a href="{www_album}">{ALBUM}</a></p>
+                <p class="h2 artist">
+                	{album_artists_www}
+                </p>
+                <p class="h3 info">
+                	<span class="year">{YEAR}</span>
+                    <span class="plays">{artist_plays_total}</span>
+                    <a href="{www.music}?genre={GENRE}" class="genre">{GENRE}</a>
+                </p>
+            </div>
+        </dt>
+        <dd class="tr">
+            <ol class="trk">
+            {album.tracks}
+            </ol>
+        </dd>
+    </dl>
+</div>

@@ -1,0 +1,10 @@
+class page extends zotune
+{
+	public function home()
+	{
+		self::$tmp["RequireMeta"] = false;
+		self::$tmp['RequireMeta']['script']['fromclasspage'] = array("src"=>"", "type"=>"text/javascript");
+		self::$tmp['RequireMeta']['script']['jquery'] = false;
+		self::$info['tpl_final'] = true;
+	}
+}

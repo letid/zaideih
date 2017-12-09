@@ -1,0 +1,14 @@
+<form name="verification" method="POST" action="{page.link.full}?request-credits-by-verification-code"> 
+<h2>{Account Verification}</h2>
+<div>
+    <span>{Verificatio nCode}</span>
+    <input type="text" name="vcode" /> 
+</div>    
+<div class="submit">
+    <input type="submit" value="{Verify Account}" />
+    <input type="hidden" name="action" value="req_cbvc" />
+    <span class="load"></span>
+</div>
+{reqcreditsverification_msg}<!--<div class="msg" id="NVCPROMSG"></div>   -->
+{AccountVerificationComplete}
+</form> 

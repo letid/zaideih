@@ -1,0 +1,33 @@
+#CHECK 
+SELECT * FROM moby_thesaurus.words AS s
+	WHERE s.word
+		NOT IN (
+		   SELECT t.source
+		   FROM mdic.mob_words AS t
+		)
+		
+#INSERT
+INSERT INTO mdic.mob_words(source,status)
+SELECT s.word,'0' FROM moby_thesaurus.words AS s
+	WHERE s.word
+		NOT IN (
+		   SELECT t.source
+		   FROM mdic.mob_words AS t
+		)
+		
+#INSERT
+INSERT INTO mdic.mob_words(source,status)
+SELECT s.lemma,'0' FROM wordnet31_snapshot.words AS s
+	WHERE s.lemma
+		NOT IN (
+		   SELECT t.source
+		   FROM mdic.mob_words AS t
+		)
+		
+#DELETE
+DELETE s FROM mdic.mob_mdsd2 AS s
+	WHERE s.en
+		IN (
+		   SELECT t.source
+		   FROM zotunemyordbok.mob_myen AS t
+		)

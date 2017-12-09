@@ -1,0 +1,93 @@
+<div class="column zn zTrk">
+    <dl class="mlt">
+        <dt class="tr tk ID" id="{ID}-{UNIQUEID}">
+            <div class="td iov s">
+            	<p>
+                	<span class="Pal io play zA" title="{Play}"><em class="io {lyric_track_css}" title="{lyric_track_name}">L</em></span>
+                    <span class="Atf star io zA {favorite_track_css}" title="{Favorite}: {favorite_track_css}">{Star}</span>
+                    <span class="actions io lyric zA {lyric_track_css}" title="{lyric_track_name}">{Lyric}</span>
+                    <span class="actions io playlist zA" title="{Playlist}">{Playlist}</span>
+                    <span class="actions io download zA" title="{Download}">{Download}</span>
+                    <img src="{url.template}images/none/nonephoto_hornbill_sml_.jpg" alt="{TITLE}">
+                </p>
+            </div>
+            <div class="td int">		
+                <p class="h1"><a href="{www_track}" class="title">{TITLE}</a></p>
+                <p class="h2"><a href="{www_artist}" class="artist">{ARTIST}</a></p>
+                <p class="h3 info">
+                	<span class="length">{LENGTH}</span>
+                    <span class="is plays" title="Plays">{PLAYS}</span>
+                    <span class="is stars" title="Stars">{favorite_track_total}</span>
+                    <span class="is comments {comment_track_css}" title="Comments">{comment_track_total}</span>
+                </p>
+            </div>
+        </dt>
+        <dd class="tr">
+            <ol class="trk">
+            	{album.tracks}
+                {tracks.list.ads.468x15}
+            </ol>
+        </dd>
+    </dl>
+    {container.artist.tracks}
+    {container.artist.albums}
+</div>
+<div class="column zm zTrk">
+    <dl class="alt">
+        <dt>
+            <a href="#" class="ALT detail zA cur" title="info"><em>Info.</em></a>
+            <a href="track/comment/{ID}" class="ALT comment zA io" title="Comment"><em>Comment</em></a>
+            <a href="#" class="ALT contribution zA io" title="Contribution"><em>Contribution</em></a>
+            <a href="track/tag/{ID}" class="ALT tag zA io" title="Tag"><em>Tag</em></a>
+            <a href="other/track/{ID}" class="ALT other zA io" title="Other"><em>Other</em></a>
+        </dt>
+        <dd id="detail">
+            {menu.artist.found}
+            {menu.track.ads.300x250.2}
+            {menu.artist.friend}
+            {menu.artist.related}
+            <p class="b1 msg" data-icon="!">...see how people suggested <a href="{www.track}">{TITLE}</a> from <a href="{www.album}">{ALBUM}</a>...</p>
+            <ol class="d2">
+                <li class="genre" title="L">
+                	<a href="contribution/gt/{ID}/none" class="CON zA" data-role="ul" title="{GENRE}">Genre</a>
+                </li>
+                <li class="Music type" title="L">
+                	<a href="contribution/ct/{ID}/none" class="CON zA" data-role="ul"  title="{ARTIST}">Music type</a>
+                </li>
+                <li class="audio" title="L">
+                	<a href="contribution/at/{ID}/none" class="CON zA" data-role="ul"  title="{TITLE}">Audio suggestion</a>
+                </li>
+                <li class="audio" title="L">
+                	<a href="contribution/zo/{ID}/none" class="CON zA" data-role="ul"  title="{ARTIST}">....ZOLANAM genna!</a>
+                </li>                
+            </ol>
+            {menu.track.ads.300x250}
+        </dd>
+        <dd id="contribution">
+        	{menu.track.lyric}
+            <p class="b1 msg" data-icon="?">How would you like to distribute on <strong>{TITLE}</strong> by <em>{ARTIST}</em> to get relevant information and correct tag?</p>
+            <ol class="d3 ds">
+                <li>
+                    <a href="contribution/genre/{ID}" class="CON zA" data-role="ul">....genre suggestion</a>
+                </li>
+                <li>
+                    <a href="contribution/christian/{ID}" class="CON zA" data-role="ul">....Christian Music Type</a>
+                </li>
+                <li>
+                    <a href="contribution/zola/{ID}" class="CON zA" data-role="ul">....ZOLA nam</a>
+                </li>
+            </ol>
+            <ol class="d3 da">
+                <li data-icon="tg">
+                	<a href="contribution/tag/{ID}" class="CON zA">...I would like to make <strong>{TITLE}</strong> tag correction!</a>
+                </li>
+                <li data-icon="al">
+                	<a href="album/get/{UNIQUEID}" class="CON zA">...I would like to contribute by posting about <strong>{ALBUM}</strong>, and it informative description such as Released, Genre, Label and Producer!</a>
+                </li>
+                <li data-icon="ar">
+                	<a href="artist/get/{ID}/{artist_encode}" class="CON zA">...please do tell us what do you know about <strong>{ARTIST}</strong>, that might help other people finding easier? Of course, this is not a comment form!</a>
+                </li>                
+            </ol>
+        </dd>
+    </dl>
+</div>

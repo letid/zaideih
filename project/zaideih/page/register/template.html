@@ -1,0 +1,70 @@
+<div class="column zn">
+    <form name="register" method="post" action="{page.link.full}">
+    <h2>{Register.} <a href="{www.login}">{already a member?}</a></h2>
+    <div>
+        <span>{Username}</span>
+      <input type="text" size="26" name="xusername" value="{xusername}"> 
+        <em>{fill.mask.username}</em>
+      </div>
+    <div>
+        <span>{Password}</span>
+        <input type="password" size="26" name="xpassword" value="{xpassword}"> 
+        <em>{fill.mask.password}</em>
+    </div>
+    <div>
+        <span>{Name}</span>
+        <select name="xtitle">{form.option.nametitle}</select>                     
+        <input type="text" size="26" name="xfullname" value="{xfullname}"> 
+       <em>{fill.mask.fullname}</em>
+    </div>
+    <div>
+        <span>{Gender leh Behmin}</span>
+        <select name="xgender">{form.option.gender}</select>                  
+        <select name="xbeh">{form.option.beh}</select> 
+    </div>
+    <div>
+        <span>{Hometown}</span>
+         <select name="xzogam">{form.option.zogam}</select> 
+    </div> 
+    <div>
+        <span>{Date of birth}</span>
+        <input type="text" size="26" name="xdob" value="{xdob}">
+        <em>{fill.mask.dob} {yyyy-mm-dd}</em>
+    </div> 
+    <div>
+        <span>{Email}</span>
+        <input type="text" size="26" name="xemail" value="{xemail}"> 
+        <em>{fill.mask.email}</em>
+    </div>
+    <div>
+        <span>{Address}</span>
+         <input type="text" size="26" name="xaddress" value="{xaddress}">
+        <em>{fill.mask.address}</em>
+    </div>
+    <div>
+        <span>{City and Postcode}</span>
+        <input type="text" size="20" name="xcity" value="{xcity}">
+        <input type="text" size="7" name="xpostcode" value="{xpostcode}">
+        <em>{fill.mask.city} {fill.mask.postcode}</em>
+    </div>
+    <div>
+        <span>{State/Province}</span>
+        <input type="text" size="20" name="xstateorprovince" value="{xstateorprovince}"> 
+        <span class="desc">{fill.mask.stateorprovince}</span>
+    </div>
+    <div>
+        <span>{Country}</span>
+        <select name="xcountry">{form.option.country}</select> 
+        <span class="desc">{Where do you live now?}</span>
+    </div>
+    <div>
+        <span>{Please tell us about yourself.}</span>
+        <textarea name="xprofile" cols="26" rows="3">{xprofile}</textarea> 
+        <em>{fill.mask.msg}</em>
+    </div>    
+    <div class="submit">
+        <input type="submit" value="{Register!}" name="register">
+    </div>
+    {registration.messages}
+    </form>
+</div>

@@ -1,0 +1,8 @@
+[$](.*?)[;]
+
+{$1}
+
+{page.bar}
+{page.header}
+{page.content}
+{page.footer}

@@ -1,0 +1,41 @@
+104.155.19.227
+146.148.122.113
+
+server {
+    listen 104.155.19.227:80;
+    server_name 104.155.19.227 zotune.com;
+    rewrite  ^/(.*)$  http://www.zotune.com/$1 permanent;
+}
+
+if ($host ~* www\.(.*)) {
+  set $host_without_www $1;
+  rewrite ^(.*)$ http://$host_without_www$1 permanent; # $1 contains '/foo', not 'www.mydomain.com/foo'
+}
+server {
+        server_name 104.155.19.227;
+        # you can add other server_name if you need other IPs
+        # or domain names such as without the www
+        add_header X-Frame-Options "SAMEORIGIN";
+        return 301 $scheme://www.zotune.com$request_uri;
+}
+server { 
+	listen 80; 
+	server_name zotune.com; 
+	rewrite ^(.*)$ $scheme://www.zotune.com$request_uri; 
+}
+
+server { 
+	listen 80; 
+	server_name zotune.com; 
+	rewrite ^(.*)$ $scheme://www.zotune.com$request_uri; 
+}
+server { 
+	listen 80; 
+	server_name nahnuai.com; 
+	rewrite ^(.*)$ $scheme://www.nahnuai.com$request_uri; 
+}
+server { 
+	listen 80; 
+	server_name zotune.net; 
+	rewrite ^(.*)$ $scheme://www.zotune.net$request_uri; 
+}

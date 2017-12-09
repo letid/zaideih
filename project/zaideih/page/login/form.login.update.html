@@ -1,0 +1,21 @@
+<form  name="LIUD"  method="post" action="{page.link.full}?update={code}" class="_jcrs"> 
+        <h3>{Update login Info.}</h3>
+          <div>
+              <span>{Username}</span>
+              <input type="text" size="26" name="xusername" value="{username}">
+              <strong></strong> 
+          </div>
+          <div>
+              <span>{Password}</span>
+              <input type="text" size="26" name="xpassword">
+              <strong></strong> 
+          </div>                               
+          <div>
+              <span>{Email}</span>
+              <input type="text" size="26" name="xemail" value="{email}">
+          </div>
+          <div class="submit">
+              <input name="login-update" type="submit" value="{Update login Info!}" {update_status}>
+          </div>
+          {msg.login.update}
+      </form>

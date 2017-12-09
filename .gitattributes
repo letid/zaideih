@@ -1,0 +1,43 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Custom for Visual Studio
+*.cs     diff=csharp
+
+# Standard to msysgit
+*.doc	 diff=astextplain
+*.DOC	 diff=astextplain
+*.docx diff=astextplain
+*.DOCX diff=astextplain
+*.dot  diff=astextplain
+*.DOT  diff=astextplain
+*.pdf  diff=astextplain
+*.PDF	 diff=astextplain
+*.rtf	 diff=astextplain
+*.RTF	 diff=astextplain
+
+# Composer
+/composer.lock      export-ignore
+/composer.json      export-ignore
+/composer.phar      export-ignore
+/composer.php       export-ignore
+
+# Nodejs
+/package-lock.json  export-ignore
+/package.json       export-ignore
+
+# IIS
+web.config          export-ignore
+
+# Other
+*.cmd               export-ignore
+/*.md               export-ignore
+/*.bat              export-ignore
+*.scss              export-ignore
+/*.js               export-ignore
+/.git               export-ignore
+/app/lethil         export-ignore
+/tests              export-ignore
+.editorconfig       export-ignore
+.gitattributes      export-ignore
+.gitignore          export-ignore

@@ -1,0 +1,32 @@
+<div class="column zn zArt">
+    {container.artist.tracks}
+    {container.artist.albums}
+</div>
+<div class="column zm zArt">
+    <dl class="alt">
+        <dt>
+            <a href="#" class="ALT detail zA cur" title="info"><em>Info.</em></a>
+            <a href="#" class="ALT contribution zA io" title="Contribution"><em>Contribution</em></a>
+            <a href="artist/tag/{artist_encode}" class="ALT tag zA" title="{ARTIST}"><em>{ARTIST}!</em></a>
+        </dt>
+        <dd id="detail">
+            <p class="b1 msg" data-icon="i">{artist info on zaideih}</p>
+            {menu.track.ads.300x250}
+            {menu.artist.friend}
+            {menu.artist.related}
+            {menu.artist.found}
+            {menu.track.adsense}
+        </dd>
+        <dd id="contribution">
+            <p class="b1 msg" data-icon="?">How would you like to distribute on <em>{ARTIST}</em> to get relevant information?</p>
+            <ol class="d3 da">
+                <li data-icon="ar">
+                	<a href="artist/get/{ID}/{artist_encode}" class="CON zA">...please do tell us what do you know about <strong>{ARTIST}</strong>, that might help other people finding easier? Of course, this is not a comment form!</a>
+                </li>
+                <li data-icon="al">
+                	<a href="album/get/{UNIQUEID}" class="CON zA">...I would like to contribute by posting about <strong>{ALBUM}</strong>, and it informative description such as Released, Genre, Label and Producer!</a>
+                </li>                
+            </ol>
+        </dd>
+    </dl>
+</div>
