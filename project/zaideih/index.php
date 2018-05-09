@@ -1,9 +1,0 @@
-<?php
-require_once('data.init.php');
-require_once('data.page.php');
-require_once('require.register.php');
-require_once('require.supports.php');
-require_once('require.consigns.php');
-require_once('class.page.php');
-require_once('data.adsense.php');
-//require_once('class.info.php');

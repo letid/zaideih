@@ -1,1 +1,0 @@
-C:\google_appengine\appcfg.py rollback E:\ZOTUNE.developer\

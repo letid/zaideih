@@ -1,1 +1,0 @@
-C:\google_appengine\dev_appserver.py --php_executable_path=C:\php\php-cgi.exe F:\ZOTUNE.developer\ --host=0.0.0.0
